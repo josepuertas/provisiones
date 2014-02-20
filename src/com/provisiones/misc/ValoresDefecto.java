@@ -152,7 +152,8 @@ public final class ValoresDefecto
 
 	public static final String DEF_PATH = "GLSL-portales"+File.separator+"provisiones"+File.separator;
 	public static final String DEF_EXEC_PATH = System.getProperty("user.dir")+File.separator+DEF_PATH;
-
+	public static final String DEF_RESOURCES_PATH =  System.getProperty("user.dir") + File.separator + "webapps"+ File.separator + "provisiones"+ File.separator + "WEB-INF"+ File.separator + "classes"+ File.separator + "com"+ File.separator + "provisiones"+ File.separator + "misc"+ File.separator;
+	
 	public static final String DEF_FILE_PATH = DEF_EXEC_PATH+"archivos"+File.separator;
 	public static final String DEF_PATH_BACKUP_RECIBIDOS = DEF_FILE_PATH+"recibidos"+File.separator;
 	public static final String DEF_PATH_BACKUP_GENERADOS = DEF_FILE_PATH+"generados"+File.separator;

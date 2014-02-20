@@ -117,7 +117,14 @@
 							<f:facet name="footer">
 								<h:commandLink>
 									<p:graphicImage value="recursos/excel.png" />  
-									<p:dataExporter type="xls" target="tabla" fileName="#{GestorCargas.sArchivo}" encoding="ISO-8859-15"/>  
+									<p:dataExporter type="xls" target="tabla" fileName="#{GestorCargas.sArchivo}" preProcessor="#{GestorCargas.preProcessXLS}"  postProcessor="#{GestorCargas.postProcessXLS}" encoding="ISO-8859-15"/>  
+								</h:commandLink>
+							</f:facet> 
+							
+							<f:facet name="footer">
+								<h:commandLink>
+									<p:graphicImage value="recursos/pdf.png" />  
+									<p:dataExporter type="pdf" target="tabla" fileName="#{GestorCargas.sArchivo}" preProcessor="#{GestorCargas.preProcessPDF2}"  postProcessor="#{GestorCargas.postProcessPDF}" encoding="ISO-8859-15"/>  
 								</h:commandLink>
 							</f:facet> 
 
